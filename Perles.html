@@ -4,14 +4,17 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta property="og:title" content="Facebook Open Graph"/>
-    <meta property="og:image" content="http://davidwalsh.name/wp-content/themes/klass/img/facebooklogo.png"/>
-    <meta property="og:site_name" content="David Walsh Blog"/>
-    <meta property="og:description" content="Facebook's Open Graph protocol allows for web developers to turn their websites into Facebook "graph" objects, allowing a certain level of customization over how information is carried over from a non-Facebook website to Facebook when a page is 'recommended', 'liked', or just generally shared."/>
+     <meta property="og:title" content="Martinegv"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="http://martinegv.me/"/>
+    <meta property="og:image" content="http://martinegv.me/Img/favicon.png"/>
+    <meta property="og:site_name" content="Martine Création"/>
+    <meta property="og:description" content="Ce site montre les produits que l'artiste Martine peut vendre. Ceci est une bonne opportunité d'achat pour aider les artistes freelance."/>
 
     <title>Perles - Martine Création</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
       <link rel="stylesheet" href="Css/css.css">
        <link rel="shortcut icon" type="image/x-icon" href="Img/favicon.ico" />
 </head>
@@ -51,7 +54,7 @@
 
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
-          <li><a href="index.html">About</a></li>
+          <li><a href="index.html">À Propos</a></li>
                <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Commande <span class="caret"></span></a>
                 <ul class="dropdown-menu" role="menu">
@@ -67,84 +70,260 @@
     </nav>
  
     <!-- CONTENU -->
+
   <div class="container">
         <div class="row">
-             <div class="col-xs-12 col-sm-12">
+             <div class="col-xs-12 col-sm-6">
                 <h1>Section Perle à repasser</h1>
             </div>
-        </div>
+        
+             <div class="col-xs-12 col-sm-6">
+              <ul class="list-group">
+                <li class="list-group-item">
+                  <span class="badge">4</span>
+                  Thème Animaux
+                </li>
+                <li class="list-group-item">
+                  <span class="badge">2</span>
+                  Thème Animation
+                </li>
+                <li class="list-group-item">
+                  <span class="badge">4</span>
+                  Thème Jeux Vidéo
+                </li>
+                <li class="list-group-item">
+                  <span class="badge">1</span>
+                  Thème Divers
+                </li>
+              </ul>
+            </div>
+        </div><!-- Row-->
 
         <div class="row">
-            <div class="col-xs-12 col-sm-6 col-lg-4">
-                 <img src="Img/OeufYoshi.jpg" class= "img-responsive">
-                 <p>Oeuf Yoshi: 2$</p>
+           <div class="col-sm-6 col-md-4">
+              <div class="thumbnail">
+                <img src="Img/OeufYoshi.jpg">
+                <div class="caption">
+                  <h3>Oeuf Yoshi: 2$</h3>
+                  <form action="Stripe/success.php" method="POST">
+                     <script
+                      src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+                      data-key="pk_test_KpF3TQOrsbv85ie3VsC20vXt"
+                      data-amount="2000"
+                      data-name="Demo Site"
+                      data-description="2 widgets ($20.00)"
+                      data-image="/128x128.png">
+                    </script>
+                  </form>
+                </div>
+              </div>
             </div>
 
-             <div class="col-xs-12 col-sm-6 col-lg-4">
-               <img src="Img/BebeYoshi.jpg" class= "img-responsive">
-               <p>Bébé Yoshi: 2$</p>
-                </div>   
-
-                <div class="col-xs-12 col-sm-6 col-lg-4">
-                 <img src="Img/DinosaureRouge.jpg" class= "img-responsive">
-                 <p>Dinosaure Rouge: 1$</p>
+             <div class="col-sm-6 col-md-4">
+              <div class="thumbnail">
+                <img src="Img/BebeYoshi.jpg">
+                <div class="caption">
+                  <h3>Bébé Yoshi: 2$</h3>
+                  <form action="Stripe/success.php" method="POST">
+                     <script
+                      src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+                      data-key="pk_test_KpF3TQOrsbv85ie3VsC20vXt"
+                      data-amount="2000"
+                      data-name="Demo Site"
+                      data-description="2 widgets ($20.00)"
+                      data-image="/128x128.png">
+                    </script>
+                  </form>
+                </div>
+              </div>
             </div>
 
-             <div class="col-xs-12 col-sm-6 col-lg-4">
-                 <img src="Img/FantomePacmanRose.jpg" class= "img-responsive">
-                 <p>Fantôme Pacman Rose: 2$</p>
+            <div class="col-sm-6 col-md-4">
+              <div class="thumbnail">
+                <img src="Img/DinosaureRouge.jpg">
+                <div class="caption">
+                  <h3>Dinosaure Rouge: 1$</h3>
+                  <form action="Stripe/success.php" method="POST">
+                     <script
+                      src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+                      data-key="pk_test_KpF3TQOrsbv85ie3VsC20vXt"
+                      data-amount="2000"
+                      data-name="Demo Site"
+                      data-description="2 widgets ($20.00)"
+                      data-image="/128x128.png">
+                    </script>
+                  </form>
+                </div>
+              </div>
             </div>
-            <div class="col-xs-12 col-sm-6 col-lg-4">
-                 <img src="Img/GoombaMario.jpg" class= "img-responsive">
-                 <p>Gomba Mario: 2$</p>
+        </div><!-- Row-->
+
+        <div class="row">
+           <div class="col-sm-6 col-md-4">
+              <div class="thumbnail">
+                <img src="Img/FantomePacmanRose.jpg" >
+                <div class="caption">
+                  <h3>Fantôme Pacman Rose: 2$</h3>
+                  <form action="Stripe/success.php" method="POST">
+                     <script
+                      src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+                      data-key="pk_test_KpF3TQOrsbv85ie3VsC20vXt"
+                      data-amount="2000"
+                      data-name="Demo Site"
+                      data-description="2 widgets ($20.00)"
+                      data-image="/128x128.png">
+                    </script>
+                  </form>
+                </div>
+              </div>
             </div>
 
-            <div class="col-xs-12 col-sm-6 col-lg-4">
-                 <img src="Img/Pingouin.jpg" class= "img-responsive">
-                  <p>Pingouin: 2$</p>
+             <div class="col-sm-6 col-md-4">
+              <div class="thumbnail">
+                 <img src="Img/GoombaMario.jpg">
+                <div class="caption">
+                  <h3>Gomba Mario: 2$</h3>
+                  <form action="Stripe/success.php" method="POST">
+                     <script
+                      src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+                      data-key="pk_test_KpF3TQOrsbv85ie3VsC20vXt"
+                      data-amount="2000"
+                      data-name="Demo Site"
+                      data-description="2 widgets ($20.00)"
+                      data-image="/128x128.png">
+                    </script>
+                  </form>
+                </div>
+              </div>
             </div>
 
-            <div class="col-xs-12 col-sm-6 col-lg-4">
-                 <img src="Img/RoadRunner.jpg" class= "img-responsive">
-                  <p>Road Runner- Bip bip: 2$</p>
+            <div class="col-sm-6 col-md-4">
+              <div class="thumbnail">
+                <img src="Img/Pingouin.jpg">
+                <div class="caption">
+                  <h3>Pingouin: 2$</h3>
+                  <form action="Stripe/success.php" method="POST">
+                     <script
+                      src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+                      data-key="pk_test_KpF3TQOrsbv85ie3VsC20vXt"
+                      data-amount="2000"
+                      data-name="Demo Site"
+                      data-description="2 widgets ($20.00)"
+                      data-image="/128x128.png">
+                    </script>
+                  </form>
+                </div>
+              </div>
+            </div>
+        </div><!-- Row-->
+             
+        <div class="row">
+           <div class="col-sm-6 col-md-4">
+              <div class="thumbnail">
+                <img src="Img/RoadRunner.jpg">
+                <div class="caption">
+                  <h3>Road Runner- Bip bip: 2$</h3>
+                  <form action="Stripe/success.php" method="POST">
+                     <script
+                      src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+                      data-key="pk_test_KpF3TQOrsbv85ie3VsC20vXt"
+                      data-amount="2000"
+                      data-name="Demo Site"
+                      data-description="2 widgets ($20.00)"
+                      data-image="/128x128.png">
+                    </script>
+                  </form>
+                </div>
+              </div>
             </div>
 
-            <div class="col-xs-12 col-sm-6 col-lg-4">
-                 <img src="Img/Serpent.jpg" class= "img-responsive">
-                  <p>Serpent: 2$</p>
+             <div class="col-sm-6 col-md-4">
+              <div class="thumbnail">
+                  <img src="Img/Serpent.jpg">
+                <div class="caption">
+                  <h3>Serpent: 2$</h3>
+                  <form action="Stripe/success.php" method="POST">
+                     <script
+                      src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+                      data-key="pk_test_KpF3TQOrsbv85ie3VsC20vXt"
+                      data-amount="2000"
+                      data-name="Demo Site"
+                      data-description="2 widgets ($20.00)"
+                      data-image="/128x128.png">
+                    </script>
+                  </form>
+                </div>
+              </div>
             </div>
 
-            <div class="col-xs-12 col-sm-6 col-lg-4">
-                 <img src="Img/Singe.jpg" class= "img-responsive">
-                  <p>Singe: 3$</p>
+            <div class="col-sm-6 col-md-4">
+              <div class="thumbnail">
+                <img src="Img/Singe.jpg">
+                <div class="caption">
+                  <h3>Singe: 3$</h3>
+                  <form action="Stripe/success.php" method="POST">
+                     <script
+                      src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+                      data-key="pk_test_KpF3TQOrsbv85ie3VsC20vXt"
+                      data-amount="2000"
+                      data-name="Demo Site"
+                      data-description="2 widgets ($20.00)"
+                      data-image="/128x128.png">
+                    </script>
+                  </form>
+                </div>
+              </div>
+            </div>
+        </div><!-- Row-->
+             
+          <div class="row">
+           <div class="col-sm-6 col-md-4">
+              <div class="thumbnail">
+               <img src="Img/Suce.jpg">
+                <div class="caption">
+                  <h3>Suce: 1$</h3>
+                  <form action="Stripe/success.php" method="POST">
+                     <script
+                      src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+                      data-key="pk_test_KpF3TQOrsbv85ie3VsC20vXt"
+                      data-amount="2000"
+                      data-name="Demo Site"
+                      data-description="2 widgets ($20.00)"
+                      data-image="/128x128.png">
+                    </script>
+                  </form>
+                </div>
+              </div>
             </div>
 
-            <div class="col-xs-12 col-sm-6 col-lg-4">
-                 <img src="Img/Suce.jpg" class= "img-responsive">
-                  <p>Suce: 1$</p>
+             <div class="col-sm-6 col-md-4">
+              <div class="thumbnail">
+                <img src="Img/Totoro.jpg" >
+                <div class="caption">
+                  <h3>Totoro: 4$</h3>
+                  <form action="Stripe/success.php" method="POST">
+                     <script
+                      src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+                      data-key="pk_test_KpF3TQOrsbv85ie3VsC20vXt"
+                      data-amount="2000"
+                      data-name="Demo Site"
+                      data-description="2 widgets ($20.00)"
+                      data-image="/128x128.png">
+                    </script>
+                  </form>
+                </div>
+              </div>
             </div>
-
-            <div class="col-xs-12 col-sm-6 col-lg-4">
-                 <img src="Img/Totoro.jpg" class= "img-responsive">
-                  <p>Totoro:4$</p>
-            </div>
-         </div> <!--row-->
-
+        </div><!-- Row-->
+      
+      <div class="row" style="text-align:center">
+        <div class="col-sm-12 col-md-12">
+        <div class="fb-like" data-href="http://martinegv.me/" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>  
+      </div> <!--Row-->    
      </div> <!-- Container-->
 
 
-
-
-
- 
-
-
-
-
   
-
-   <div class="fb-like" data-href="http://martinegv.me/" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
-    
 
     <!-- GOOGLE ANALYTICS-->
 <script>
