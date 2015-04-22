@@ -19,26 +19,35 @@ body{
 
 .navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover{
 	background-color: #F781F3;
+	color: #000;
 }
 
 ul.dropdown-menu{
 background-color: #F6CEF5;	
 }
+.dropdown-menu>li>a:hover{
+	background-color: #F781F3;
+}
+
 .badge{
 	background-color: #F6CEF5;
+	color: #000;
 }
 .list-group-item{
 	background-color: rgba(43, 44, 44, 0.6);
 }
 
-h1{
-	color:#F6CEF5;
- }
-
 .thumbnail{
 	background-color: #F6CEF5;
 	text-align: center;
 }
+#carousel1{
+padding: 2% 15% 2% 25%;
+}
+
+h1{
+	color:#F6CEF5;
+ }
 
 p{
 	text-align: justify;
