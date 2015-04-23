@@ -2,7 +2,7 @@
 
 init_set('display_errors',1)
 
-require_once('/stripe/init.php');
+require_once('/Stripe/stripe/init.php');
 
 // Set your secret key: remember to change this to your live secret key in production
 // See your keys here https://dashboard.stripe.com/account/apikeys
@@ -27,7 +27,6 @@ $charge = \Stripe\Charge::create(array(
 $myCard = array('number' => '4242424242424242', 'exp_month' => 5, 'exp_year' => 2015);
 $charge = \Stripe\Charge::create(array('card' => $myCard, 'amount' => 2000, 'currency' => 'usd'));
 echo $charge;
-
 ?>
 
 <!DOCTYPE html>
@@ -54,6 +53,5 @@ echo $charge;
 <body>
  <h1>Merci !!!</h1>
  <button><a href="index.html">Revenir au site</a></button>
-
 </body>
 </html>
