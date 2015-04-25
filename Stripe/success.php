@@ -1,7 +1,5 @@
 <?php
 
-init_set('display_errors',1)
-
 require_once('stripe/init.php');
 
 // Set your secret key: remember to change this to your live secret key in production
@@ -42,11 +40,18 @@ $charge = \Stripe\Charge::create(array(
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
     <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
-      <link rel="stylesheet" href="Css/css.css">
-       <link rel="shortcut icon" type="image/x-icon" href="Img/favicon.ico" />
+    <link rel="stylesheet" href="../Css/css.css">
+    <link rel="shortcut icon" type="image/x-icon" href="Img/favicon.ico" />
 </head>
 <body>
- <h1>Merci !!!</h1>
- <button><a href="index.html">Revenir au site</a></button>
+
+  <div class="container">
+        <div class="row">
+             <div class="col-xs-12 col-sm-12">   
+                <h1>Merci !!!</h1>
+                <button><a href="../index.html">Revenir au site</a></button>
+              </div>
+        </div> <!--Rows-->
+  </div><!--Container-->
 </body>
 </html>
